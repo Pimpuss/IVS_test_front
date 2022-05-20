@@ -8,8 +8,10 @@ import { Dialog } from "@reach/dialog";
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-//IMPORT CONTEXT
+//IMPORT DES CONTEXTS
 import { PiecesContext } from "../context/pieceContext";
+import { BuildingsContext } from "../context/buildingContext";
+import { OrgaContext } from "../context/orgaContext";
 
 function ModalBat({ deleteData, action }) {
   // DECLARATION DE NAVIGATE AFIN DE POUVOIR S'EN SERVIR POUR UN RETOUR ARRIERE DU MODAL
@@ -17,6 +19,8 @@ function ModalBat({ deleteData, action }) {
 
   // RECUP DES LA STATE DE RELOAD VIA LE CONTEXT
   const { reloadPiece, setReloadPiece } = useContext(PiecesContext);
+  const { reloadBuilding, setReloadBuilding } = useContext(BuildingsContext);
+  const { reloadOrga, setReloadOrga } = useContext(OrgaContext);
 
   // DECLARATION DES STATE PERMETANT DE STOCKER ET MODIFIER LES DATA RECUPERER DES INPUT
   const [newName, setNewName] = useState(deleteData.piece_name);
@@ -28,7 +32,9 @@ function ModalBat({ deleteData, action }) {
     axios
       .delete(`http://localhost:4242/pieces/${deleteData.id}`)
       .then((response) => console.log("RESPONSE REQUETE", response))
-      .then(setReloadPiece(!reloadPiece));
+      .then(setReloadPiece(!reloadPiece))
+      .then(setReloadBuilding(!reloadBuilding))
+      .then(setReloadOrga(!reloadOrga));
     navigate(-1);
   };
   //--------------------------------
@@ -42,7 +48,8 @@ function ModalBat({ deleteData, action }) {
         buildings_id: newBuildingId,
       })
       .then((response) => console.log("RESPONSE REQUETE", response))
-      .then(setReloadPiece(!reloadPiece));
+      .then(setReloadPiece(!reloadPiece))
+      .then(setReloadBuilding(!reloadBuilding));
     navigate(-1);
   };
   //--------------------------------
