@@ -1,0 +1,32 @@
+header {
+  background-color: #000;
+  height: 11vh;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.logoContainer {
+  width: 7vw;
+  padding: 10px;
+}
+
+.linkContainer {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.navLink {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: regular, Arial, Helvetica, sans-serif;
+}
+
+.navLink:hover {
+  color: #3dad37;
+}

@@ -1,0 +1,70 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 190vh;
+}
+
+.gridContainer {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 3%;
+  flex-direction: column;
+}
+
+.homeContainer h2 {
+  margin-bottom: 2%;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.addOrgaContainer,
+.addBatContainer {
+  display: flex;
+  justify-content: space-around;
+  height: 3vh;
+  align-content: center;
+  align-items: stretch;
+  margin-bottom: 1%;
+}
+
+.addOrgaContainer {
+  width: 40%;
+}
+
+.addBatContainer {
+  width: 60%;
+}
+
+.addInput {
+  border-radius: 10px;
+  text-align: center;
+  border: solid 1px #000;
+}
+
+.addTitle {
+  color: #000;
+  font-family: cursive;
+}
+
+.submitButton {
+  width: 7vw;
+  border-radius: 10px;
+  background: white;
+  border: solid 1px #000;
+  cursor: pointer;
+}
+
+.actionIcon2 {
+  width: 12rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
