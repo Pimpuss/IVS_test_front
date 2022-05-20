@@ -9,6 +9,7 @@ Ce projet a été créé avec [Create React App](https://github.com/facebook/cre
 ▶ Ensuite utilisez la commande `npm i` afin d'installer toutes les dépendances (composants externes utilisés).<br>
 
 Une fois l'installation terminée, votre fichier `package.json` doit contenir les dépendances suivantes : <br>
+
 ![5](https://user-images.githubusercontent.com/89353029/169551109-2d650d5d-ebf5-4529-9555-53703fc76e67.png)
 
 ⚠ UNIQUEMENT POUR LE SERVER BACK :
@@ -18,9 +19,9 @@ Une fois l'installation terminée, votre fichier `package.json` doit contenir le
 ▶Importez corectement le fichier `BDD ORGANISATION.sql` se trouvant dans ce repo dans le dossier `BDD` dans votre WorkeBench à l'aide de `server` / `data import` et sélectionnez votre fichier au préalable téléchargé et faite `Start Import`.
 
 ▶ Enfin utilisez la commande `npm start` en ayant bien modifié le `Script` dans le `package.json` en mettant `"start": "nodemon server.js"` pour lancer le projet en local à l'aide de nodemon. Si tout se passe correctement sur l'adresse http://localhost:4242/ (selon vos variables d'environement) vous devez avoir sur votre page web "Tout fonctionne !"
-Plus qu'a aller sur les différentes routes /organisations /buildings /pieces pour afficher les informations de l'APi.
+Plus qu'à aller sur les différentes routes /organisations /buildings /pieces pour afficher les informations de l'APi.
 
-Veillez à ce que le serveur Backend tourne également sur votre machine. Si vous ne l'avez pas déjà fait, [cliquez ici pour accéder au repo Frontend](https://github.com/WildCodeSchool/11-21-noBugNovember-P3-sos-back) et cloner son contenu sur votre machine.
+Veillez à ce que le serveur Backend tourne également sur votre machine. Si vous ne l'avez pas déjà fait, [cliquez ici pour accéder au repo Backend](https://github.com/Pimpuss/IVS_test_back) et cloner son contenu sur votre machine.
 
 ## 📝 Description :
 
@@ -30,7 +31,7 @@ Pour ce faire, une base de données sous MSQL ainsi qu'un serveur back tournant 
 J'ai voulu pousser un peu plus les fonctionnalité, de façon à pouvoir ajouter des organisations, des batiments ou même des piéces, de pouvoir les editer à l'aide du petit stylo (le nom uniquement pour les organisation, le nom pour les batiments, son code postale et l'oganisation de rattachement et le nom pour les pièces, sa capacité de personne et le batiment de rattachement).
 Ainsi que la possibilité des supprimer des informations en cliquant sur la petite corbeille mais à être vigilant pour les organisation et les batiments qui sont bien souvent rattaché eux même aux organisations pour les batiments et les pièces pour les buildings.
 
-## 🛠 Technologie utilisée :
+## 🛠 Technologies utilisée :
 
 IHM - Front : ReactJs <br>
 Base de données : MySQL <br>
@@ -39,5 +40,8 @@ APiRest - Serveur back : NodeJS, Express, Cors, Dotenv
 # 📸 ScreenShots :
 
 ![1](https://user-images.githubusercontent.com/89353029/169547230-1b06b733-9ea9-4096-9088-0e3ef7436920.png)
+
 ![2](https://user-images.githubusercontent.com/89353029/169547232-c70abd4e-645c-4587-b69f-e393495fcd0a.png)
+
 ![3](https://user-images.githubusercontent.com/89353029/169547237-57544e50-09f9-441a-b859-f9fba0b6d887.png)
+
